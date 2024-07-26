@@ -1,0 +1,211 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: qiannairong
+  name: 錢乃榮上海話
+  version: "2022.07.05"
+  author:
+    - Yuanao nyoeghau' Chen ‹nyoeghau@nyoeghau.com›
+  description: |
+    上海言話
+    拼寫方案採用吳語協會式
+    http://wu-chinese.com/romanization/
+    http://wu-chinese.com/minidict/
+  dependencies:
+    - luna_pinyin
+
+switches:
+  - name: simplification
+    states: [漢字, 汉字]
+  - name: ascii_mode
+    reset: 0
+    states: [中文, 西文]
+  - name: full_shape
+    reset: 0
+    states: [半角, 全角]
+  - name: extended_charset
+    reset: 1
+    states: [通用, 增廣]
+  - name: ascii_punct
+    reset: 0
+    states: [。，, ．，]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - affix_segmentor@luna_pinyin
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - script_translator
+    - script_translator@luna_pinyin
+  filters:
+    - simplifier
+    - uniquifier
+    - reverse_lookup_filter@yahwe_zaone_reverse_lookup
+
+speller:
+  alphabet: ";zyxwvutsrqponmlkjihgfedcba"
+  delimiter: " '"
+  algebra:
+    - xform/'/;/
+    - xform/\d+$//
+
+    - abbrev/^([a-z]).+$/$1/
+    - abbrev/^(([ptsck]|ts)h).+$/$1/
+    - abbrev/^(ts).+$/$1/
+    - abbrev/^(ny).+$/$1/
+    - abbrev/^(ng).+$/$1/
+    - abbrev/^(gh).+$/$1/
+
+
+    # 雙擊拼寫加快打字速度
+    - derive/^bh/bb/
+    - derive/^dh/dd/
+    - derive/^gh/gg/
+    - derive/^sh/ss/
+    - derive/^xh/xx/
+    - derive/^jh/jj/
+    - derive/^fh/ff/
+    - derive/^fh/ff/
+    # 簡化拼寫
+    - derive/^xia/xa/
+    - derive/^jia/ja/
+    - derive/^xhia/xha/
+    - derive/^jhia/jha/
+    - derive/^xhia/xxa/
+    - derive/^jhia/jja/
+    - derive/^qia/qa/
+    - derive/^xio/xo/
+    - derive/^jio/jo/
+    - derive/^xhio/xho/
+    - derive/^jhio/jho/
+    - derive/^xhio/xxo/
+    - derive/^jhio/jjo/
+    - derive/^qio/qo/
+    - derive/^xuoe/xoe/
+    - derive/^juoe/joe/
+    - derive/^xhuoe/xhoe/
+    - derive/^jhuoe/jhoe/
+    - derive/^xhuoe/xxoe/
+    - derive/^jhuoe/jjoe/
+    - derive/^quoe/qoe/
+    - derive/^xuoe/xioe/
+    - derive/^juoe/jioe/
+    - derive/^xhuoe/xhioe/
+    - derive/^jhuoe/jhioe/
+    - derive/^xhuoe/xxioe/
+    - derive/^jhuoe/jjioe/
+    - derive/^quoe/qioe/
+    - derive/^sy/s/
+    - derive/^shy/sh/
+    - derive/^ssy/ss/
+    - derive/^cy/c/
+    - derive/^zy/z/
+    - derive/^zy/z/
+    - derive/uik$/uk/
+    - derive/uik$/uh/
+    # 適應㗂艚
+    - derive/^xuoe/xuan/
+    - derive/^juoe/juan/
+    - derive/^xhuoe/xhuan/
+    - derive/^jhuoe/jhuan/
+    - derive/^xhuoe/xxuan/
+    - derive/^jhuoe/jjuan/
+    - derive/^quoe/quan/
+    - derive/e$/ai/
+    - derive/uek$/uok/
+    - derive/uek$/uoh/
+    # 模糊音
+    - derive/ak$/ek/
+    - derive/ek$/ak/
+    - derive/ak$/ek/
+    - derive/an$/ang/
+    - derive/ang$/an/
+    - derive/^wh/w/
+    - derive/^yh/y/
+    - derive/^bh/b/
+    - derive/^dh/d/
+    - derive/^hh//
+    - derive/^gh/g/
+    - derive/^xh/jh/
+    - derive/^xh/jj/
+    # 拼寫變化適應吳語協會
+    - derive/ek$/eh/
+    - derive/ak$/ah/
+    - derive/ik$/ih/
+    - derive/ao$/au/
+    - derive/in$/ing/
+    - derive/en$/eng/
+    - derive/ou$/eu/
+    - derive/ong$/on/
+    - derive/ang$/aon/
+    - derive/ong$/ung/
+    - derive/^fh/v/
+    - derive/^qi/chi/
+    # 反向模糊尖團音
+    - derive/^xi/si/
+    - derive/^xhi/shi/
+    - derive/^xhi/ssi/
+    - derive/^qi/tshi/
+    - derive/^ji/tsi/
+    - derive/^xhi/zi/
+   
+    #- derive/^zi(?=a)/y/ # 謝謝 zia ya; 好像 hau yan
+
+  
+
+
+translator:
+  dictionary: qiannairong
+  prism: qiannairong
+  spelling_hints: 6
+  comment_format:
+    - xform/\d+//
+
+luna_pinyin:
+  tag: luna_pinyin
+  dictionary: luna_pinyin
+  prefix: "`"
+  suffix: ";"
+  tips: 〔普通話〕
+  preedit_format:
+    - xform/([nl])v/$1ü/
+    - xform/([nl])ue/$1üe/
+    - xform/([jqxy])v/$1u/
+
+qiannairong_reverse_lookup:
+  tags: [luna_pinyin]
+  overwrite_comment: false
+  dictionary: qiannairong
+  comment_format:
+    - xform/\d+//
+
+punctuator:
+  import_preset: symbols
+  full_shape:
+    ":": [：, ；]
+  half_shape:
+    ":": [：, ；]
+
+key_binder:
+  import_preset: default
+
+recognizer:
+  import_preset: default
+  patterns:
+    punct: "^/([0-9]0?|[a-z]+)$"
+    luna_pinyin: "`[a-z]*;?$"
