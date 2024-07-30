@@ -1,26 +1,63 @@
-# rime dictionary
-# encoding: udf-8
+# erime dhijdiongaery
+# enjodhing: wudf-8
 #
 # 上海吳語
 #
 # 碼表來源：
 #
-#   上海閒話
-#   吳語越音 
-#   神死慟瞑 
+#   上海閒話  <tzyyiggnih@yahoo.com.cn>
+#   吳語越音  <zhufya@mail.ustc.edu.cn>
+#   神死慟瞑  <411325365@qq.com>
 #
 # 本地化、增改：
 # cathaylab goetiansoc@proton.me
 
 ---
 name: qiannairong
-version: "2024.07.05"
+version: "2024.07.30"
 sort: by_weight
 use_preset_vocabulary: true
 # yimboerd_dabhles: 
 #   - qiyun_shange # wuse whit ℞ edhwhaerdh-maerdyer/erime-qiyun_shange
 ...
 ##
+遙望
+得	lek	0%
+不	ffek
+故	ggek	0%
+故是	ghek shy
+故也	ghek hha
+故歇	ghek xik
+故末	ghek mek
+覅緊
+有仔
+喫仔
+到仔
+沒仔
+好仔
+去仔
+在仔
+看仔
+聽仔
+上仔
+下仔
+生仔
+死仔
+曉得仔
+得仔
+小乾
+無	m	0%
+比仔
+著	shek
+著	lek	0%
+阿拉	ak la
+我伲	ak la
+阿拉	ala
+好伐	hao fha
+伐	fha
+#
+浪	lang
+丄	lang
 貓貓頭	mao mao dhou
 嘞嘞	lek lek
 好伐	hao va
@@ -47,6 +84,7 @@ use_preset_vocabulary: true
 生煎	san ji
 生煎饅頭	san ji
 畀勒	bek lek
+畀扗	bek lek
 近腔	jhin qian
 前一腔	xhi yik qian
 小赤佬	xiao zek lao
@@ -71,6 +109,7 @@ use_preset_vocabulary: true
 着	shek
 勒海	lek he
 嘞嗨	lek he
+扗海	lek he
 早丄	zao lang
 侬	nong
 是	shy
@@ -1655,6 +1694,7 @@ use_preset_vocabulary: true
 丟了	diu liao
 丟人	diu nin
 丟勒
+丟扗
 丟子
 丟芯
 丟荒
@@ -3715,6 +3755,7 @@ use_preset_vocabulary: true
 住下	shy hho
 住個	shy hhek
 住勒	shy lek
+住扗	shy lek
 住友	shy yhou
 住嘴	shy zy
 住在	shy she
@@ -3869,6 +3910,8 @@ use_preset_vocabulary: true
 佞	nin
 佟	dhong
 你	ni
+你	n
+你	ng
 你丫	ni yia
 𡢿丫	nong yia
 儂丫	nong yia
@@ -6823,6 +6866,7 @@ use_preset_vocabulary: true
 勒住	lek shy
 勒出
 勒勒
+扗扗
 勒死	lek sy
 勒殺吊死	lek sak diao xi
 勒眼
@@ -6961,7 +7005,9 @@ use_preset_vocabulary: true
 弗多幾時
 勿多幾時
 弗好勒
+弗好扗
 勿好勒
+勿好扗
 勿尷弗尬
 勿尷勿尬
 弗庸
@@ -9971,6 +10017,7 @@ use_preset_vocabulary: true
 嘛	ma
 嘜	mak
 嘞	lek
+扗	lek
 嘞	le
 嘟	du
 嘡	dhang
@@ -10031,6 +10078,7 @@ use_preset_vocabulary: true
 嘸日嘸夜	m nik m yha
 嘸沒	m mek
 嘸沒勒	m mek lek
+嘸沒扗	m mek lek
 嘸沒言話	m mek hhe hho
 嘸沒關係	m mek gue yhi
 嘸清頭	m qin dhou
@@ -10342,6 +10390,7 @@ use_preset_vocabulary: true
 囤	dhen
 囥	kang
 囥勒該
+囥扗該
 囥好
 囧	jiong
 囪	cong
@@ -11040,6 +11089,7 @@ use_preset_vocabulary: true
 塞出	sek cek
 塞到	sek dao
 塞勒	sek lek
+塞扗	sek lek
 塞北	se bok
 塞外	se nga
 塞子	sek zy
@@ -12602,6 +12652,7 @@ use_preset_vocabulary: true
 好個懷	hao hhek wha
 好到
 好勒
+好扗
 好去	hao qi
 好古
 好喫喫
@@ -13177,6 +13228,7 @@ use_preset_vocabulary: true
 存了	shen lek
 存亡	shen fhang
 存勒
+存扗
 存吳	shen whu
 存單	shen de
 存垃	shen lak
@@ -13905,6 +13957,7 @@ use_preset_vocabulary: true
 寫個	xia hhek
 寫光	xia guang
 寫勒多
+寫扗多
 寫字間	xia shy ge
 寫就
 寫得光	xia dek guang
@@ -15754,6 +15807,7 @@ use_preset_vocabulary: true
 弗出門
 弗分
 弗勒
+弗扗
 弗去
 弗叫
 弗可以
@@ -19454,6 +19508,7 @@ use_preset_vocabulary: true
 搬過
 搬離
 搭	dak
+搭	dek
 搭一腳
 搭乘	dak cen
 搭仔	dak zy
@@ -27728,6 +27783,9 @@ use_preset_vocabulary: true
 爽神
 爽約	sang yiak
 爾	er
+尓	er
+尓	ni
+尓	n
 爾耳	er er
 爿	bhe
 牀	shang
@@ -38384,6 +38442,7 @@ use_preset_vocabulary: true
 講出來	gang cek le
 講到	gang dao
 講勒	gang lek
+講扗	gang lek
 講史	gang sy
 講和	gang whu
 講喪	gang sang
@@ -38585,6 +38644,7 @@ use_preset_vocabulary: true
 讀出來	dhok cek le
 讀到	dhok dao
 讀勒	dhok lek
+讀扗	dhok lek
 讀卡	dhok ka
 讀取	dhok qu
 讀報	dhok bao
@@ -38959,6 +39019,7 @@ use_preset_vocabulary: true
 費力	fi lik
 費勁	fi jin
 費勒	fi lek
+費扗	fi lek
 費厄	fi ngek
 費去	fi qi
 費城	fi shen
@@ -39640,6 +39701,7 @@ use_preset_vocabulary: true
 蹲下	den hho
 蹲了	den lek
 蹲勒	den lek
+蹲扗	den lek
 蹲在	den she
 蹲坐	den shu
 蹲坑	den kan
@@ -40569,6 +40631,7 @@ use_preset_vocabulary: true
 連你
 連個	li gu
 連勒
+連扗
 連南	li noe
 連合	li hhek
 連呼
@@ -41010,6 +41073,7 @@ use_preset_vocabulary: true
 還價	whe ga
 還剩	whe shan
 還勒	hhe lek
+還扗	hhe lek
 還原	whe nyuoe
 還口	whe kou
 還可	whe ku
@@ -47819,6 +47883,7 @@ erime 中州韻輸入法	erime
 丼	dhong
 丼	de
 爾	n
+爾	ng
 垬	hhong
 骫	we
 骳	bhi	100%

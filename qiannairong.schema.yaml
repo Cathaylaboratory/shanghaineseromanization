@@ -3,14 +3,14 @@
 
 schema:
   schema_id: qiannairong
-  name: 錢乃榮上海話
-  version: "2022.07.05"
+  name: 錢乃榮上海閒話
+  version: "2024.07.30"
   author:
-    - Yuanao nyoeghau' Chen ‹nyoeghau@nyoeghau.com›
+    - Cathaylab <goetiansoc@proton.me>
   description: |
-    上海言話
-    拼寫方案採用吳語協會式
-    http://wu-chinese.com/romanization/
+    上海閒話
+    拼寫方案採用錢乃榮式
+    https://zh.wikipedia.org/wiki/%E9%92%B1%E4%B9%83%E8%8D%A3%E5%BC%8F%E4%B8%8A%E6%B5%B7%E8%AF%9D%E6%8B%BC%E9%9F%B3%E6%96%B9%E6%A1%88
     http://wu-chinese.com/minidict/
   dependencies:
     - luna_pinyin
