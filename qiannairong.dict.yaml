@@ -14,15 +14,40 @@
 
 ---
 name: qiannairong
-version: "2024.07.30"
+version: "2024.08.01"
 sort: by_weight
 use_preset_vocabulary: true
 # yimboerd_dabhles: 
 #   - qiyun_shange # wuse whit ℞ edhwhaerdh-maerdyer/erime-qiyun_shange
 ...
 ##
+牙	ngo
+芽	ngo
+衙	ngo
+蚜	ngo
+砑	ngo
+犽	ngo
+伢	ngo
+茄	ga
+痂	go
+駕	go
+嫁	go
+嘉	go
+佳	go
+架	go
+假	go
+加	go
+價	go
+家	go
+差	co
+語言	nyu ni
+言	ni
+語言	nyu yhi
+全	she	0%
+倷	na
+搭	dek
 遙望
-得	lek	0%
+得	lek	30%
 不	ffek
 故	ggek	0%
 故是	ghek shy
@@ -46,17 +71,18 @@ use_preset_vocabulary: true
 曉得仔
 得仔
 小乾
-無	m	0%
+無	m	20%
 比仔
-著	shek
-著	lek	0%
+著	shek	100%
+覺著	gok shek
+著	lek	20%
 阿拉	ak la
 我伲	ak la
 阿拉	ala
 好伐	hao fha
 伐	fha
-#
-浪	lang
+
+浪	lang	100%
 丄	lang
 貓貓頭	mao mao dhou
 嘞嘞	lek lek
@@ -111,6 +137,7 @@ use_preset_vocabulary: true
 嘞嗨	lek he
 扗海	lek he
 早丄	zao lang
+早浪	zao lang
 侬	nong
 是	shy
 自	shy
@@ -129,6 +156,12 @@ use_preset_vocabulary: true
 箇個	ghek ek
 箇一個	ghek yik ek
 箇一個	ghek yik ghek
+搿個	ghgh
+搿只	ghek zek
+搿個	ghek ghek
+搿個	ghek ek
+搿一個	ghek yik ek
+搿一個	ghek yik ghek
 侬好	nong hao
 小囡	xiao noe
 囡囡	noe noe
@@ -155,7 +188,7 @@ use_preset_vocabulary: true
 我冊那	ngu cek na
 哪能介	na nen ga
 嘸沒	mek
-##
+
 
 〇	lin
 一	yik
@@ -4999,7 +5032,7 @@ use_preset_vocabulary: true
 儒生	shy sen
 儒術	shy shek
 儔	shou
-儕	she
+儕	she	100%
 儕去	she qi
 儕好
 儕是
@@ -18719,10 +18752,10 @@ use_preset_vocabulary: true
 拾趣	shek qu
 拾遺	shek yhi
 拾零	shek lin
-拿	na	0%
-拿	no	0%
+拿	na	
+拿	no	100%
 拿	ne	100%
-拿	nao	0%
+拿	nao	
 拿下	ne hho
 拿住	ne shy
 拿來	ne le
@@ -19069,7 +19102,7 @@ use_preset_vocabulary: true
 掘墓
 掙	zen
 掙破	zen pu
-掛	go
+掛	go	100%
 掛了	go liao
 掛包
 掛單	go de
@@ -35902,7 +35935,7 @@ use_preset_vocabulary: true
 葓	hhong
 葖	dhek
 著	zy	100%
-著	shak	0%
+著	shak
 著	zak	0%
 著文
 葚	shen
@@ -47696,7 +47729,7 @@ use_preset_vocabulary: true
 𢯹	gak
 㨣	ong
 塕	ong
-上	lang
+上	lang	0%
 畀	bek
 在	lak
 在許	lak he
@@ -47748,6 +47781,26 @@ erime 中州韻輸入法	erime
 讓渠	nian yhi
 讓渠拉	nian yhi la
 讓渠拉	nian yhi la
+渠來付	yi le fu
+渠個	yi hhek
+渠哥	yi gu
+渠妹	yi me
+渠想	yi xian
+渠拉	yi la
+渠拉	yi la
+渠拉個	yi la hhek
+渠要是	yi yiao shy
+叫渠	jiao yi
+對渠	de yi
+弗睬渠	fhek ce yi
+弗睬渠	fek ce yi
+懷疑渠呢	wha ni yi ne
+畀渠	bek yi
+放渠一碼	fang yi yik mo
+睬渠	ce yi
+讓渠	nian yi
+讓渠拉	nian yi la
+讓渠拉	nian yi la
 儂也	nong hha
 儂仍	nong nin
 儂去	nong qi
